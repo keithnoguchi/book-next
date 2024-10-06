@@ -1,0 +1,17 @@
+{
+  "name": "ch01",
+  "version": "1.0.0",
+  "description": "Chapter 1: Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Keith Noguchi <keith@noguchi.us>",
+  "license": "GPL-2.0",
+  "dependencies": {
+    "express": "^4.21.0"
+  },
+  "devDependencies": {
+    "karma": "^6.4.4"
+  }
+}
