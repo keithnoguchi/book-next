@@ -1,12 +1,9 @@
-let globalVar = "global";
-function scope() {
-	let foo = "1";
-	if (true) {
-		let bar = "2";
-	}
-	console.log(globalVar);
-	//console.log(window.globalVar);
-	console.log(foo);
-	//console.log(bar);
+const primitiveType = 1;
+try {
+	primitiveType = 2;
+} catch (err) {
+	console.log(err);
 }
-scope();
+const nonPrimitiveDataType = [];
+nonPrimitiveDataType.push(1);
+console.log(nonPrimitiveDataType);
