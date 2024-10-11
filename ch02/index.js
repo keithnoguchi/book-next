@@ -1,9 +1,24 @@
-const primitiveType = 1;
-try {
-	primitiveType = 2;
-} catch (err) {
-	console.log(err);
-}
-const nonPrimitiveDataType = [];
-nonPrimitiveDataType.push(1);
-console.log(nonPrimitiveDataType);
+//
+// A demonstration of the defining and lexical scopes.
+//
+// ```shell
+// node index.js
+// defining scope
+// lexical scope
+// ```
+this.scope = "lexical scope";
+
+const scopeOf = {
+	scope: "defining scope",
+
+	traditional: function() {
+		return this.scope;
+	},
+
+	allow: () => {
+		return this.scope;
+	},
+};
+
+console.log(scopeOf.traditional());
+console.log(scopeOf.allow());
