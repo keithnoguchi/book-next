@@ -1,24 +1,9 @@
-//
-// A demonstration of the defining and lexical scopes.
-//
-// ```shell
-// node index.js
-// defining scope
-// lexical scope
-// ```
-this.scope = "lexical scope";
+let numbers = [-2, -3, 0, 1, 2];
 
-const scopeOf = {
-	scope: "defining scope",
+let traditional = numbers.filter(function(num) {
+	return num >= 0;
+});
+let arrow = numbers.filter(num => num >= 0);
 
-	traditional: function() {
-		return this.scope;
-	},
-
-	allow: () => {
-		return this.scope;
-	},
-};
-
-console.log(scopeOf.traditional());
-console.log(scopeOf.allow());
+console.log(traditional);
+console.log(arrow);
