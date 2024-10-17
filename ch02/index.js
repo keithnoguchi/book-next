@@ -1,7 +1,8 @@
-let object = { fruit: "apple", color: "green" };
-let { fruit, color } = object;
+const originalArray = [1, 2, 3, 4];
+const clonedArray = [...originalArray];
 
-console.log(`fruit: ${fruit}, color: ${color}`);
+clonedArray[0] = 'one';
+clonedArray[1] = 'two';
+clonedArray[2] = 'three';
 
-color = 'red';
-console.log(`object.color: ${object.color}, color: ${color}`);
+console.log(`originalArray: ${originalArray}, clonedArray: ${clonedArray}`);
