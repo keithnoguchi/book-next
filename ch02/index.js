@@ -1,4 +1,7 @@
-const original = [1, 2, 3, 4];
-const multiplied = original.map((item) => item * 10);
-console.log(`original array: ${original}`);
-console.log(`multiplied array: ${multiplied}`);
+let object = { fruit: "apple", color: "green" };
+let { fruit, color } = object;
+
+console.log(`fruit: ${fruit}, color: ${color}`);
+
+color = 'red';
+console.log(`object.color: ${object.color}, color: ${color}`);
