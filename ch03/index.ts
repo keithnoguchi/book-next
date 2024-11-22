@@ -5,5 +5,3 @@ interface WeatherProps {
 }
 
 const weatherComponent = (props: WeatherProps): string => props.weather;
-
-

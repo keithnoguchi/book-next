@@ -1,6 +1,9 @@
 {
-  "extends": "@tsconfig/recommended/tsconfig.json",
-  "compilerOptions": {},
-  "include": [],
-  "exclude": []
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "module": "es6",
+    "moduleResolution": "node",
+    "target": "es6",
+    "noImplicitAny": true
+  }
 }
