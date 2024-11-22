@@ -1,5 +1,9 @@
-function log(msg: string): void {
-	console.log(msg);
+interface WeatherProps {
+	weather: string;
+	zipcode: string;
+	temp?: number;
 }
 
-console.log("Hello TypeScript");
+const weatherComponent = (props: WeatherProps): string => props.weather;
+
+
