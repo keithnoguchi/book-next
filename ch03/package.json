@@ -1,0 +1,20 @@
+{
+  "name": "ch03",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.21.1",
+    "node-fetch": "^3.3.2",
+    "undici-types": "^6.19.8"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "typescript": "^5.6.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Keith Noguchi <keith@noguchi.us>",
+  "license": "GPL-2.0-only"
+}
